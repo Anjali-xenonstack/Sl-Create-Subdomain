@@ -27,7 +27,7 @@ ingress:
   deploymentPath: /api/deployments
     tls:
       - hosts:
-          - lab.akirastack.com 
+          - "{{ .Values.teamSlug }}".lab.akirastack.com 
         secretName: "{{ .Values.teamSlug }}-tls"  
 
 tolerations: []
