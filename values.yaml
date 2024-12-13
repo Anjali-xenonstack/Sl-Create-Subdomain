@@ -1,6 +1,6 @@
 ##______________ Common variables ______________
 teamSlug: "dashboard"
-domainName: lab.akirastack.team
+domainName: lab.akirastack.com
 # namespace: "uat-stacklabs"
 # is_billing: "true"
 # Common generic service account for all services
