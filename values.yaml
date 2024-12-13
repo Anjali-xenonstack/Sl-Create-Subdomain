@@ -78,7 +78,7 @@ deployments:
 dash:
   replicaCount: 1
   image:
-    repository: dr.neuralcompany.team/stacklabs/sl-dash:prod11940
+    repository: dr.neuralcompany.team/stacklabs/sl-dash:prod11950
     pullPolicy: IfNotPresent
   service:
     type: ClusterIP
