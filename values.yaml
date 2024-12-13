@@ -25,10 +25,10 @@ ingress:
       cert-manager.io/cluster-issuer: letsencrypt-prod
     # traefik.ingress.kubernetes.io/router.middlewares: uat-stacklabs-dashboard-sl-dash@kubernetescrd
   deploymentPath: /api/deployments
-  # tls:
-  #   - hosts:
-  #       - lab.neuralcompany.team  # Replace with your actual domain
-  #     secretName: dashboard-tls  # Secret to store TLS certificate
+    tls:
+      - hosts:
+          - lab.akirastack.com 
+        secretName: "{{ .Values.teamSlug }}-tls"  
 
 tolerations: []
 affinity: {}
