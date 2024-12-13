@@ -25,10 +25,10 @@ ingress:
       cert-manager.io/cluster-issuer: letsencrypt-prod
     # traefik.ingress.kubernetes.io/router.middlewares: uat-stacklabs-dashboard-sl-dash@kubernetescrd
   deploymentPath: /api/deployments
-    tls:
-      - hosts:
-          - "{{ .Values.teamSlug }}".lab.akirastack.com 
-        secretName: "{{ .Values.teamSlug }}-tls"  
+    # tls:
+    #   - hosts:
+    #       - "{{ .Values.teamSlug }}".lab.akirastack.com 
+    #     secretName: "{{ .Values.teamSlug }}-tls"  
 
 tolerations: []
 affinity: {}
