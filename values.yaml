@@ -42,7 +42,7 @@ deployments:
     pullPolicy: IfNotPresent
   STACKLABS_API_PRIVATE_KEY: IHVlLeQiZknbmt
   ### Software repo link 
-  SOFTWARES_ZIP: "https://git.neuralcompany.team/stacklabs/softwares/-/archive/release/1.0.1/softwares-release-1.0.1.zip"
+  SOFTWARES_ZIP: "https://github.com/Anjali-xenonstack/Softwares/archive/refs/heads/release/1.0.2.zip"
   #SOFTWARES_ZIP: "https://git.xenonstack.com/stacklabs/softwares/repository/archive.zip?ref=uat"
   SOFTWARES_ZIP_PRIVATE_TOKEN: vktwEPzXPJtgEaEE2FgJ
   ENVIRONMENT: production
