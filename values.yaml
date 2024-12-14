@@ -1,7 +1,7 @@
 ##______________ Common variables ______________
 teamSlug: "dashboard"
 domainName: lab.akirastack.com
-# namespace: "uat-stacklabs"
+# namespace: "stacklabs"
 # is_billing: "true"
 # Common generic service account for all services
 serviceAccountName: stacklabs
@@ -22,13 +22,9 @@ imagePullSecrets:
 ingress:
   className: nginx
   annotations:
-      cert-manager.io/cluster-issuer: letsencrypt-prod
-    # traefik.ingress.kubernetes.io/router.middlewares: uat-stacklabs-dashboard-sl-dash@kubernetescrd
-  deploymentPath: /api/deployments
-    # tls:
-    #   - hosts:
-    #       - "{{ .Values.teamSlug }}".lab.akirastack.com 
-    #     secretName: "{{ .Values.teamSlug }}-tls"  
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    cert-manager.io/cluster-issuer: letsencrypt-production 
 
 tolerations: []
 affinity: {}
