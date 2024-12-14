@@ -33,7 +33,7 @@ affinity: {}
 deployments:
   replicaCount: 1
   image:
-    repository: dr.neuralcompany.team/stacklabs/stacklabs-deployments:feature-uat11876
+    repository: dr.neuralcompany.team/stacklabs/stacklabs-deployments:feature-uat11965
     tag: ""
     pullPolicy: IfNotPresent
   STACKLABS_API_PRIVATE_KEY: IHVlLeQiZknbmt
@@ -94,7 +94,7 @@ dash:
 telemetry:
   replicaCount: 1
   image:
-    repository: dr.neuralcompany.team/stacklabs/stacklabs-telemetry:feature-uat11877
+    repository: dr.neuralcompany.team/stacklabs/stacklabs-telemetry:feature-uat11959
     pullPolicy: IfNotPresent
   env:
     k8sHost:  https://4.247.160.26
